@@ -1,0 +1,60 @@
+/* ======================== */
+/* 单个房间方块基础样式     */
+/* ======================== */
+.roomcard {
+  width: 200px;              /* 方块宽度：200像素 */
+  height: 200px;             /* 方块高度：200像素，形成正方形 */
+  margin: 10px;              /* 方块与其他方块之间的外边距 */
+  border-radius: 10px;       /* 圆角边框，让方块边缘柔和 */
+  color: white;              /* 方块内文字颜色设为白色 */
+  font-weight: bold;         /* 文字加粗，增强可读性 */
+  display: flex;             /* 启用 Flexbox 布局 */
+  flex-direction:column;    /* 子元素纵向排列（默认方向） */
+  justify-content: center;   /* 子元素在垂直方向居中 */
+  align-items: center;       /* 子元素在水平方向居中 */
+  cursor: pointer;           /* 鼠标悬停变为小手，提示可点击 */
+  transition: background-color 0.3s ease; /* 背景色变更带动画 */
+}
+
+/* ======================== */
+/* 不同房间状态的背景颜色   */
+/* ======================== */  
+.available {
+  background-color: #4caf50;  /* 绿色 → 房间空闲 */
+}
+
+.reserved {
+  background-color: #ff9800;  /* 橙色 → 房间已被预约 */
+}
+
+.occupied {
+  background-color: #f44336;  /* 红色 → 房间使用中 */
+}
+
+/* ======================== */
+/* 弹窗样式                  */
+/* ======================== */
+.popup {
+  
+    position: fixed;               /* 固定在全屏，不跟随 RoomCard */
+    top: 50%;                      /* 居中显示 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;       /* 白色背景 */
+    color: black;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 1000;                 /* 弹窗最高层 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+  
+  
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);  /* 半透明黑色 */
+  z-index: 999;                         /* 比弹窗低一层 */
+}

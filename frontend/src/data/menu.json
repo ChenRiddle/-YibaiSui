@@ -1,0 +1,455 @@
+{
+  "categories": ["Soup & Rice", "BBQ", "Side Dishes", "Main Dishes", "Beverages"],
+  "items": [
+    {
+      "id": 1,
+      "name": "Kimchi Jjigae",
+      "category": "Soup & Rice",
+      "price": 28,
+      "cost": 9.8,
+      "description": "Spicy kimchi stew with pork",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Doenjang Jjigae",
+      "category": "Soup & Rice",
+      "price": 26,
+      "cost": 9.1,
+      "description": "Soybean paste stew with vegetables",
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Seolleongtang",
+      "category": "Soup & Rice",
+      "price": 35,
+      "cost": 12.25,
+      "description": "Ox bone soup with rice",
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Yukgaejang",
+      "category": "Soup & Rice",
+      "price": 32,
+      "cost": 11.2,
+      "description": "Spicy beef soup with vegetables",
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Galbitang",
+      "category": "Soup & Rice",
+      "price": 42,
+      "cost": 14.7,
+      "description": "Short rib soup",
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Budae Jjigae",
+      "category": "Soup & Rice",
+      "price": 38,
+      "cost": 13.3,
+      "description": "Army stew with sausages and spam",
+      "available": true
+    },
+    {
+      "id": 7,
+      "name": "Sundubu Jjigae",
+      "category": "Soup & Rice",
+      "price": 29,
+      "cost": 10.15,
+      "description": "Soft tofu stew",
+      "available": true
+    },
+    {
+      "id": 8,
+      "name": "Miyeok Guk",
+      "category": "Soup & Rice",
+      "price": 24,
+      "cost": 8.4,
+      "description": "Seaweed soup",
+      "available": true
+    },
+    {
+      "id": 9,
+      "name": "Gamjatang",
+      "category": "Soup & Rice",
+      "price": 45,
+      "cost": 15.75,
+      "description": "Pork backbone stew",
+      "available": true
+    },
+    {
+      "id": 10,
+      "name": "Samgyetang",
+      "category": "Soup & Rice",
+      "price": 48,
+      "cost": 16.8,
+      "description": "Ginseng chicken soup",
+      "available": true
+    },
+    {
+      "id": 11,
+      "name": "Galbi",
+      "category": "BBQ",
+      "price": 68,
+      "cost": 23.8,
+      "description": "Marinated beef short ribs",
+      "available": true
+    },
+    {
+      "id": 12,
+      "name": "Bulgogi",
+      "category": "BBQ",
+      "price": 58,
+      "cost": 20.3,
+      "description": "Marinated beef slices",
+      "available": true
+    },
+    {
+      "id": 13,
+      "name": "Samgyeopsal",
+      "category": "BBQ",
+      "price": 52,
+      "cost": 18.2,
+      "description": "Grilled pork belly",
+      "available": true
+    },
+    {
+      "id": 14,
+      "name": "Dakgalbi",
+      "category": "BBQ",
+      "price": 45,
+      "cost": 15.75,
+      "description": "Spicy grilled chicken",
+      "available": true
+    },
+    {
+      "id": 15,
+      "name": "LA Galbi",
+      "category": "BBQ",
+      "price": 72,
+      "cost": 25.2,
+      "description": "LA style beef short ribs",
+      "available": true
+    },
+    {
+      "id": 16,
+      "name": "Chadolbaegi",
+      "category": "BBQ",
+      "price": 55,
+      "cost": 19.25,
+      "description": "Thinly sliced beef brisket",
+      "available": true
+    },
+    {
+      "id": 17,
+      "name": "Dwaeji Bulgogi",
+      "category": "BBQ",
+      "price": 48,
+      "cost": 16.8,
+      "description": "Marinated pork",
+      "available": true
+    },
+    {
+      "id": 18,
+      "name": "Galmaegi",
+      "category": "BBQ",
+      "price": 62,
+      "cost": 21.7,
+      "description": "Grilled beef skirt meat",
+      "available": true
+    },
+    {
+      "id": 19,
+      "name": "Moksal",
+      "category": "BBQ",
+      "price": 46,
+      "cost": 16.1,
+      "description": "Pork neck meat",
+      "available": true
+    },
+    {
+      "id": 20,
+      "name": "Yangnyeom Galbi",
+      "category": "BBQ",
+      "price": 65,
+      "cost": 22.75,
+      "description": "Seasoned beef ribs",
+      "available": true
+    },
+    {
+      "id": 21,
+      "name": "Kimchi",
+      "category": "Side Dishes",
+      "price": 12,
+      "cost": 4.2,
+      "description": "Fermented cabbage",
+      "available": true
+    },
+    {
+      "id": 22,
+      "name": "Japchae",
+      "category": "Side Dishes",
+      "price": 18,
+      "cost": 6.3,
+      "description": "Sweet potato noodles",
+      "available": true
+    },
+    {
+      "id": 23,
+      "name": "Pajeon",
+      "category": "Side Dishes",
+      "price": 22,
+      "cost": 7.7,
+      "description": "Green onion pancake",
+      "available": true
+    },
+    {
+      "id": 24,
+      "name": "Kimchi Pajeon",
+      "category": "Side Dishes",
+      "price": 24,
+      "cost": 8.4,
+      "description": "Kimchi pancake",
+      "available": true
+    },
+    {
+      "id": 25,
+      "name": "Mandu",
+      "category": "Side Dishes",
+      "price": 16,
+      "cost": 5.6,
+      "description": "Korean dumplings",
+      "available": true
+    },
+    {
+      "id": 26,
+      "name": "Tteokbokki",
+      "category": "Side Dishes",
+      "price": 15,
+      "cost": 5.25,
+      "description": "Spicy rice cakes",
+      "available": true
+    },
+    {
+      "id": 27,
+      "name": "Kongnamul",
+      "category": "Side Dishes",
+      "price": 10,
+      "cost": 3.5,
+      "description": "Bean sprout salad",
+      "available": true
+    },
+    {
+      "id": 28,
+      "name": "Spinach Namul",
+      "category": "Side Dishes",
+      "price": 10,
+      "cost": 3.5,
+      "description": "Seasoned spinach",
+      "available": true
+    },
+    {
+      "id": 29,
+      "name": "Cucumber Kimchi",
+      "category": "Side Dishes",
+      "price": 12,
+      "cost": 4.2,
+      "description": "Pickled cucumber",
+      "available": true
+    },
+    {
+      "id": 30,
+      "name": "Korean Pickled Radish",
+      "category": "Side Dishes",
+      "price": 8,
+      "cost": 2.8,
+      "description": "Sweet pickled radish",
+      "available": true
+    },
+    {
+      "id": 31,
+      "name": "Bibimbap",
+      "category": "Main Dishes",
+      "price": 32,
+      "cost": 11.2,
+      "description": "Mixed rice bowl",
+      "available": true
+    },
+    {
+      "id": 32,
+      "name": "Dolsot Bibimbap",
+      "category": "Main Dishes",
+      "price": 36,
+      "cost": 12.6,
+      "description": "Stone pot mixed rice",
+      "available": true
+    },
+    {
+      "id": 33,
+      "name": "Kimchi Fried Rice",
+      "category": "Main Dishes",
+      "price": 28,
+      "cost": 9.8,
+      "description": "Fried rice with kimchi",
+      "available": true
+    },
+    {
+      "id": 34,
+      "name": "Seafood Fried Rice",
+      "category": "Main Dishes",
+      "price": 35,
+      "cost": 12.25,
+      "description": "Fried rice with seafood",
+      "available": true
+    },
+    {
+      "id": 35,
+      "name": "White Rice",
+      "category": "Main Dishes",
+      "price": 6,
+      "cost": 2.1,
+      "description": "Steamed white rice",
+      "available": true
+    },
+    {
+      "id": 36,
+      "name": "Purple Rice",
+      "category": "Main Dishes",
+      "price": 8,
+      "cost": 2.8,
+      "description": "Mixed grain rice",
+      "available": true
+    },
+    {
+      "id": 37,
+      "name": "Seafood Bibimbap",
+      "category": "Main Dishes",
+      "price": 38,
+      "cost": 13.3,
+      "description": "Mixed rice with seafood",
+      "available": true
+    },
+    {
+      "id": 38,
+      "name": "Beef Bibimbap",
+      "category": "Main Dishes",
+      "price": 42,
+      "cost": 14.7,
+      "description": "Mixed rice with beef",
+      "available": true
+    },
+    {
+      "id": 39,
+      "name": "Vegetable Bibimbap",
+      "category": "Main Dishes",
+      "price": 28,
+      "cost": 9.8,
+      "description": "Mixed rice with vegetables",
+      "available": true
+    },
+    {
+      "id": 40,
+      "name": "Bulgogi Bibimbap",
+      "category": "Main Dishes",
+      "price": 38,
+      "cost": 13.3,
+      "description": "Mixed rice with bulgogi",
+      "available": true
+    },
+    {
+      "id": 41,
+      "name": "Coca Cola",
+      "category": "Beverages",
+      "price": 6,
+      "cost": 0.6,
+      "description": "Classic Coke",
+      "available": true
+    },
+    {
+      "id": 42,
+      "name": "Sprite",
+      "category": "Beverages",
+      "price": 6,
+      "cost": 0.6,
+      "description": "Lemon-lime soda",
+      "available": true
+    },
+    {
+      "id": 43,
+      "name": "Korean Beer (Hite)",
+      "category": "Beverages",
+      "price": 12,
+      "cost": 1.2,
+      "description": "Korean lager beer",
+      "available": true
+    },
+    {
+      "id": 44,
+      "name": "Soju",
+      "category": "Beverages",
+      "price": 15,
+      "cost": 1.5,
+      "description": "Korean distilled spirit",
+      "available": true
+    },
+    {
+      "id": 45,
+      "name": "Green Tea",
+      "category": "Beverages",
+      "price": 8,
+      "cost": 0.8,
+      "description": "Hot green tea",
+      "available": true
+    },
+    {
+      "id": 46,
+      "name": "Iced Green Tea",
+      "category": "Beverages",
+      "price": 10,
+      "cost": 1.0,
+      "description": "Cold green tea",
+      "available": true
+    },
+    {
+      "id": 47,
+      "name": "Korean Corn Tea",
+      "category": "Beverages",
+      "price": 8,
+      "cost": 0.8,
+      "description": "Roasted corn tea",
+      "available": true
+    },
+    {
+      "id": 48,
+      "name": "Makgeolli",
+      "category": "Beverages",
+      "price": 18,
+      "cost": 1.8,
+      "description": "Korean rice wine",
+      "available": true
+    },
+    {
+      "id": 49,
+      "name": "Orange Juice",
+      "category": "Beverages",
+      "price": 10,
+      "cost": 1.0,
+      "description": "Fresh orange juice",
+      "available": true
+    },
+    {
+      "id": 50,
+      "name": "Water",
+      "category": "Beverages",
+      "price": 3,
+      "cost": 0.3,
+      "description": "Bottled water",
+      "available": true
+    }
+  ]
+}

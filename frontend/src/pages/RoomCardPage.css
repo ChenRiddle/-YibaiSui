@@ -1,0 +1,50 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1b5e20;     /* 深绿色背景 */
+  color: white;                  /* 白色字体 */
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  min-width: 350px;
+  font-family: Arial, sans-serif; /* 字体更现代 */
+}
+.popup input {
+  width: 100%;
+  margin-bottom: 12px;             /* 每行间距 */
+  padding: 8px;
+  background-color: #333333;       /* 黑色输入框 */
+  color: white;                    /* 白色文字 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.popup button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;        /* 白色按钮 */
+  color: #1b5e20;                 /* 深绿色字体 */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: #e0e0e0;      /* 悬停淡灰色 */
+}
+
+.roomcard-container {
+  margin-top: 70px;  
+  display: flex;
+  flex-wrap: wrap;               /* ✨ 自动换行 */
+  justify-content: center;       /* ✨ 水平居中 */
+  gap: 20px;                     /* ✨ 房间之间的间隔 */
+  padding: 20px;
+}
+

@@ -1,0 +1,60 @@
+//How to run
+frontend:
+cd frontend
+npm run dev
+
+backend（先不）
+cd backend
+source venv/bin/activate  # 激活虚拟环境
+python app.py            # 运行后端
+
+//roadmap
+frontend:
+- 加上alert 提醒
+- 修改一下预计到店时间，加上月份
+
+backend:
+app.py是现在的python唯一文件，
+
+
+---------------------------------------
+基础功能（前端已有）：
+
+ - 房间预约管理
+ - 房间状态跟踪
+
+ 可以加上： walk-in clients的菜品，花费，每日收入.
+ 
+SQL可以添加的功能：
+客户信息管理 - 电话、姓名、历史记录
+消费记录 - 每桌花费、菜品统计
+营业数据 - 每日收入、客流量
+
+ML可以添加的智能功能：
+
+客流预测 - 预测哪个时间段会比较忙
+推荐系统 - 根据历史推荐热门菜品
+收入预测 - 预测每日/每月收入
+
+
+
+
+14/03/2025
+1. GPT recommands me to start with Frontend, still watching the tutorial videos about react.
+2. install and deploy both front end and back end first.
+3. In backend:
+(1)rooms.json stores the condition of the room (availabe or occupied); 
+(2)srver.js is for the logic of backend(read from room.json, change the condition and update the room condition)
+
+4. In frontend:
+(1)RoomCard.jsx is the condition of room (green or red) and buttons
+(2)App.jsx is manage the condition of rooms and manage data
+(3)main.jsx is the entrance of React, deliver these things to webpage
+
+It seems like React can fullfil all functions now why we still need backend? cuz now we are using backend as a DB to store data, if the user refresh, it wont lost
+
+
+
+
+
+

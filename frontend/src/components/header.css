@@ -1,0 +1,31 @@
+.header{
+  background-color: #143c16;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+  width:100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  position: fixed; /* 如果您想固定Header */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* 确保不被覆盖 */
+}
+.header-menu {
+  display: flex;
+  gap: 40px; 
+  margin-right: 40px;
+}
+
+.menu-item {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  text-decoration: underline; 
+}
