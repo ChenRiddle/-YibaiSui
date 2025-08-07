@@ -36,6 +36,10 @@ ML可以添加的智能功能：
 推荐系统 - 根据历史推荐热门菜品
 收入预测 - 预测每日/每月收入
 
+git checkout chen
+git add .
+git commit -m "xxxx"
+git push
 
 
 

@@ -93,6 +93,7 @@ export function RoomCardPage() {
       {/* 预约弹窗 */}
       {showForm && (
         <>
+        {/*如果用户点击弹窗外面的暗色背景，就关闭弹窗*/}
           <div className="popup-backdrop" onClick={() => setShowForm(false)}></div>
           <div className="popup">
             <h3>Reserve Room {selectedRoom.id}</h3>
@@ -112,8 +113,11 @@ export function RoomCardPage() {
       {/* 状态操作弹窗 */}
       {showOptions && (
         <>
+          {/*如果用户点击弹窗外面的暗色背景，就关闭弹窗*/}
           <div className="popup-backdrop" onClick={() => setShowOptions(false)}></div>
           <div className="popup">
+
+            {/*如果是预约了的话就会有取消预约或者到店*/}
             {selectedRoom.status === 'reserved' && (
               <>
                 <p>Room {selectedRoom.id} is reserved</p>
@@ -121,12 +125,15 @@ export function RoomCardPage() {
                 <button onClick={handleCheckIn}>Guest Arrived</button>
               </>
             )}
+
+            {/*如果是已经来了的话，那就可以离开*/}
             {selectedRoom.status === 'occupied' && (
               <>
                 <p>Room {selectedRoom.id} is in use</p>
                 <button onClick={handleCheckout}>Guest Left</button>
               </>
             )}
+
             <button onClick={() => setShowOptions(false)}>Close</button>
           </div>
         </>

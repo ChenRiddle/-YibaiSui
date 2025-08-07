@@ -23,6 +23,10 @@
   background-color: #4caf50;  /* 绿色 → 房间空闲 */
 }
 
+.noOrder {
+  background-color: #4caf50;  
+}
+
 .reserved {
   background-color: #ff9800;  /* 橙色 → 房间已被预约 */
 }
@@ -31,6 +35,9 @@
   background-color: #f44336;  /* 红色 → 房间使用中 */
 }
 
+.inOrder {
+  background-color: #f44336;  
+}
 /* ======================== */
 /* 弹窗样式                  */
 /* ======================== */
