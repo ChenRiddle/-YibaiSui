@@ -1,0 +1,173 @@
+/* ===== 弹窗基础样式 ===== */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1b5e20;     /* 深绿色背景 */
+  color: white;                  /* 白色字体 */
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  min-width: 700px;
+  max-width: 1000px;              /* 添加最大宽度 */
+  max-height: 80vh;              /* 添加最大高度 */
+  overflow-y: auto;              /* 内容过多时滚动 */
+  font-family: Arial, sans-serif;
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);  /* 半透明黑色 */
+  z-index: 999;                         /* 比弹窗低一层 */
+}
+
+/* ===== 按钮样式 ===== */
+.popup button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;        /* 白色按钮 */
+  color: #1b5e20;                 /* 深绿色字体 */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: #e0e0e0;      /* 悬停淡灰色 */
+}
+
+/* ===== 输入框样式 ===== */
+.popup input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px;
+  background-color: #333333;       /* 黑色输入框 */
+  color: white;                    /* 白色文字 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.popup input::placeholder {
+  color: #ccc;                     /* 占位符颜色 */
+}
+
+/* ===== 房间容器样式 ===== */
+.roomcard-container {
+  margin-top: 70px;  
+  display: flex;
+  flex-wrap: wrap;               /* 自动换行 */
+  justify-content: center;       /* 水平居中 */
+  gap: 20px;                     /* 房间之间的间隔 */
+  padding: 20px;
+}
+
+/* ===== 搜索相关样式 ===== */
+.search-container {
+  margin-bottom: 15px;
+}
+
+.search-result {
+  margin: 15px 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+}
+
+.search-item {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-item:last-child {
+  border-bottom: none;
+}
+
+.search-item button {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* ===== 已选菜品样式 ===== */
+.selected-dishes {
+  margin: 15px 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.selected-dishes h3 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.selected-dishes > div {
+  padding: 8px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-dishes > div:last-child {
+  border-bottom: none;
+}
+
+.selected-dishes button {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #ff4444;
+  color: white;
+}
+
+.selected-dishes button:hover {
+  background-color: #ff6666;
+}
+
+/* ===== 总价样式 ===== */
+.total-price {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #2a5a2a;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #4caf50;
+}
+
+.total-price strong {
+  font-size: 18px;
+  color: #90ee90;
+}
+
+/* ===== 表单样式 ===== */
+.popup form {
+  margin-top: 20px;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/* ===== 空状态样式 ===== */
+.selected-dishes p,
+.search-result p {
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
+  margin: 20px 0;
+}
