@@ -23,7 +23,7 @@ export function OrderPage(){
     //点餐
     const [searchTerm, setSearchTerm] = useState('');//搜索关键词
     const [selectedDishes, setSelectedDishes] = useState([]);//已选菜品
-    // const [roomOrders, setRoomOrders] = useState({});  // 独立存储order的东西，为了adddish加的
+    const [roomOrders, setRoomOrders] = useState({});  // 独立存储order的东西，为了adddish加的
 
     //搜索菜单
     const filterMenu = menuData.items.filter(item =>
@@ -37,8 +37,11 @@ export function OrderPage(){
     setSelectedDishes([]);
     setSearchTerm('');
     if (room.status === 'noOrder') {
+      setSelectedDishes([]);
       setShowOrderForm(true);        // 没有点餐 - 开始点
     } else {
+      const roomOrderData = roomOrders[room.id]||[];
+      setSelectedDishes(roomOrderData);
       setShowRoomOptions(true);     // 已预约/占用 → 打开操作选项
     }
   };
@@ -82,6 +85,11 @@ export function OrderPage(){
       return;
     }
 
+    setRoomOrders(previousDishes => ({
+      ...previousDishes,
+      [selectedRoom.id]: selectedDishes
+    }));
+
     const updatedRooms = rooms.map(room =>
       room.id === selectedRoom.id
         ? { ...room, status: 'inOrder' }
@@ -100,6 +108,12 @@ export function OrderPage(){
 
   //结账
   const handleCheckout =() =>{
+    setRoomOrders(previousOrders => {
+      const newOrders = {...previousOrders};
+      delete newOrders[selectedRoom.id];
+      return newOrders;
+    });
+
     const updatedRooms = rooms.map(room =>
       room.id === selectedRoom.id ? {...room, status: 'noOrder'}
       : room
@@ -117,6 +131,11 @@ export function OrderPage(){
 
   //取消点餐
   const handleTableCancel = () => {
+    setRoomOrders(previousOrders => {
+      const newOrders = {...previousOrders};
+      delete newOrders[selectedRoom.id];
+      return newOrders;
+    });
     const updatedRooms = rooms.map(room =>
       room.id === selectedRoom.id
         ? {...room, status:'noOrder'}
@@ -204,6 +223,8 @@ export function OrderPage(){
           {selectedRoom.status === 'inOrder' && (
             <>
             <p>Room {selectedRoom.id} is in order.</p>
+            {/*总价显示*/}
+             <p>Current Order Total: ${calculateTotal()}</p>
             {/*结账*/}
             <button onClick={handleCheckout}>Checkout</button>
             {/*加菜*/}
